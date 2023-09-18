@@ -1,0 +1,35 @@
+.footer-div {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  color: #6b7280;
+  position: relative;
+  top: 1200px;
+  left: 450px;
+}
+.social-div {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.condition {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+  color: #111827;
+}
+.conditions {
+  color: var(--gray-900, #111827);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.copyright {
+  color: var(--gray-500, #6b7280);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

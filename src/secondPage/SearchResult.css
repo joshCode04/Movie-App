@@ -1,0 +1,112 @@
+.movie1 {
+  width: 1333px;
+  height: 642px;
+  font-family: sans-serif;
+  display: flex;
+}
+.dashboard {
+  width: 226px;
+  height: 600px;
+  flex-shrink: 0;
+  border-radius: 0px 45px 45px 0px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: #fff;
+  padding-top: 30px;
+}
+.logo {
+  margin: 0;
+  margin-bottom: 0;
+}
+.left {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  color: #333333;
+  margin-left: 20px;
+}
+.nav {
+  width: 226px;
+  height: 406px;
+  flex-shrink: 0;
+  list-style: none;
+  margin-top: 50px;
+}
+.menu {
+  display: block;
+  height: 195px;
+}
+.nav-link {
+  list-style: none;
+  float: right;
+  width: 226px;
+  height: 53px;
+}
+
+.home {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  background: contain no-repeat;
+  color: lightgray 50%;
+  margin-top: 10px;
+  margin-left: 35px;
+}
+.nav-link-active {
+  width: 226px;
+  height: 53px;
+  flex-shrink: 0;
+  list-style: none;
+  color: #be123c;
+  font-family: Poppins;
+  /* font-size: 20px; */
+  font-style: normal;
+  /* font-weight: 600; */
+  line-height: normal;
+  list-style: none;
+  float: right;
+  background: rgba(190, 18, 60, 0.1);
+  border-right: 5px red solid;
+}
+.content {
+  padding-left: 20px;
+}
+/* .border {
+  width: 0px;
+  height: 56.001px;
+  transform: rotate(0.331deg);
+  flex-shrink: 0;
+  stroke-width: 6px;
+  stroke: #be123c;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+} */
+.ad-box {
+  color: #666;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 170px;
+  height: 180px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid rgba(190, 18, 60, 0.7);
+  background: rgba(248, 231, 235, 0.4);
+  margin-left: 30px;
+  text-align: center;
+  padding-top: 30px;
+}
+.playing {
+  color: #be123c;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 112px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: rgba(190, 18, 60, 0.2);
+}

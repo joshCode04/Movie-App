@@ -1,0 +1,12 @@
+.featured-header {
+  margin-top: 0px;
+  position: relative;
+  top: 200px;
+  color: #000;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  left: 20px;
+  width: 500px;
+}

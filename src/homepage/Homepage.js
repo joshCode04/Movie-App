@@ -1,7 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import "./Homepage.css";
 import imdb from "./imdb.png";
 import tomato from "./tomato.jpeg";
 export default function HomepageContent() {
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    // Navigate to the "searchInput" route
+    navigate("/searchInput");
+  };
   return (
     <>
       <div className="main-content-container">
@@ -32,7 +39,7 @@ export default function HomepageContent() {
           where principal photography began September 25, 2013 and wrapped on
           December 20, 2013.
         </p>
-        <button className="trailer-button">
+        <button className="trailer-button" onClick={handleButtonClick}>
           <span className="trailer-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"

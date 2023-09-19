@@ -6,12 +6,12 @@
 }
 .dashboard {
   width: 226px;
-  height: 600px;
+  height: 640px;
   flex-shrink: 0;
   border-radius: 0px 45px 45px 0px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   background: #fff;
-  padding-top: 30px;
+  /* padding-top: 30px; */
 }
 .logo {
   margin: 0;
@@ -29,7 +29,7 @@
   height: 406px;
   flex-shrink: 0;
   list-style: none;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 .menu {
   display: block;
@@ -109,4 +109,22 @@
   flex-shrink: 0;
   border-radius: 30px;
   background: rgba(190, 18, 60, 0.2);
+}
+.go-back ion-icon {
+  /* Set the font-size to change the icon size */
+  font-size: 24px;
+
+  /* Set the color */
+  color: #be123c;
+
+  /* Add additional styles such as margin, padding, etc. */
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid #be123c;
+  margin-left: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.go-back:hover ion-icon {
+  font-size: 27px;
 }

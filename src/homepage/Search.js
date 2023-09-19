@@ -8,8 +8,15 @@ export default function SearchContainer() {
           <div class="icon-container">
             <ion-icon name="film-outline"></ion-icon>
           </div>
-          <h3 style={{ margin: 0, marginLeft: "19px", marginBottom: "0" }}>
-            MovieBox
+          <h3
+            style={{
+              margin: 0,
+              marginLeft: "19px",
+              marginBottom: "0",
+              color: "white",
+            }}
+          >
+            FilmFusion
           </h3>
         </div>
 

@@ -3,16 +3,32 @@ import React from "react";
 import "./SearchResult.css";
 import Trailer from "./trailer.js";
 import LogOut from "./logout.png";
+import { useNavigate } from "react-router-dom";
 
 function SearchResults() {
+  const navigate = useNavigate();
+  const handleButtonClick = () => {
+    navigate(-1);
+  };
   return (
     <div className="movie1">
       <div className="dashboard">
+        <div
+          className="go-back"
+          onClick={handleButtonClick}
+          style={{ display: "flex" }}
+        >
+          <ion-icon name="chevron-back-circle-outline"></ion-icon>
+
+          <p style={{ margin: 0, paddingTop: "20px", height: "20px" }}>
+            Go Back
+          </p>
+        </div>
         <div className="left">
           <div class="icon-container">
             <ion-icon name="film-outline"></ion-icon>
           </div>
-          <h3 className="logo">MovieBox</h3>
+          <h3 className="logo">FilmFusion</h3>
         </div>
         <div className="nav">
           <ul className="menu">

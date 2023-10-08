@@ -249,3 +249,7 @@
   position: relative;
   bottom: 60px;
 }
+.trailer-video {
+  border-radius: 10px;
+  overflow: hidden;
+}

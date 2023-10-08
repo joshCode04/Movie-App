@@ -1,12 +1,18 @@
 import "./Movie.css";
 import imdb from "./imdb.png";
 import tomato from "./tomato.jpeg";
+import { useNavigate } from "react-router-dom";
 
 export default function MovieCard({ movie }) {
   const imgUrl = "https://image.tmdb.org/t/p/original";
+  const navigate = useNavigate();
+
+  const handleMovieClick = () => {
+    navigate(`/trailer/${movie.id}`);
+  };
   return (
     <>
-      <div className="movie">
+      <div className="movie" onClick={handleMovieClick}>
         <div className="movie-choice">
           <p className="movie-type">{movie.media_type}</p>
 

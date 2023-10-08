@@ -1,0 +1,38 @@
+.form-box {
+  position: absolute;
+  display: block;
+  height: 400px;
+  left: 450px;
+  top: 100px;
+  width: 400px;
+  text-align: center;
+  justify-content: center;
+  background-color: #ffffff32;
+  border-radius: 20px;
+}
+.input {
+  width: 250px;
+  height: 35px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  padding-left: 4px;
+}
+.input::placeholder {
+  color: white;
+}
+.checkbox {
+  border-radius: 2px;
+}
+.checkbox1 {
+  position: relative;
+  right: 60px;
+  margin-bottom: 40px;
+}
+.btn-login {
+  width: 250px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: #be123c;
+}

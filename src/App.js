@@ -10,7 +10,8 @@ import Feature from "./homepage/feature.js";
 import Footer from "./homepage/footer.js";
 import { Route, Routes } from "react-router-dom";
 import SearchResults from "./secondPage/SearchResult.js";
-
+import background from "./homepage/background.jpeg";
+import Trailer from "./secondPage/trailer";
 const options = {
   method: "GET",
   headers: {
@@ -24,14 +25,15 @@ function App() {
   return (
     <Routes>
       <Route path="" element={<AllApp />} />
-      <Route path="searchInput" element={<SearchResults />} />
+      <Route path="/searchInput" element={<SearchResults />} />
+      <Route path="/trailer/:movieId" element={<SearchResults />} />
     </Routes>
   );
 }
 function AllApp() {
   return (
     <div className="main-container">
-      <div className="homepage-title">
+      <div className="homepage-title" style={{ background: { background } }}>
         <SearchContainer />
         <HomepageContent />
         <Feature />
@@ -60,7 +62,7 @@ export function Card({}) {
         }
         const data = await response.json();
         setMovies(data.results.slice(8));
-        console.log(data.results.slice(8));
+        console.log(data.results);
       } catch (error) {
         console.error(error);
       }

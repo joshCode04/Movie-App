@@ -44,7 +44,7 @@ export default function MovieCard({ movie }) {
           <span style={{ color: "#9ca3af" }}>
             {movie.origin_country ? movie.origin_country : "No Origin Country"}
           </span>
-          <h3 style={{ color: "black" }}>{movie.title || movie.name}</h3>
+          <h3 style={{ color: "white" }}>{movie.title || movie.name}</h3>
           <div
             className="ratings"
             style={{ display: "flex", alignItems: "center" }}
@@ -67,7 +67,7 @@ export default function MovieCard({ movie }) {
                 margin: 0,
                 padding: 0,
                 marginLeft: "40px",
-                color: "black",
+                color: "white",
               }}
             >
               86.0/100
@@ -83,9 +83,9 @@ export default function MovieCard({ movie }) {
                 alt="tomato"
               />
             </div>
-            <p style={{ margin: 0, color: "black" }}>90%</p>
+            <p style={{ margin: 0, color: "white" }}>90%</p>
           </div>
-          <p style={{ color: "#9ca3af", margin: 0, paddingTop: "20px" }}>
+          <p style={{ color: "white", margin: 0, paddingTop: "20px" }}>
             Adventure, Horor
           </p>
         </div>

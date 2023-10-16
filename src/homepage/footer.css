@@ -3,24 +3,42 @@
   flex-direction: column;
   align-items: center;
   gap: 36px;
-  color: #6b7280;
+  color: white;
   position: relative;
   top: 1200px;
   left: 450px;
 }
+/* In your CSS file */
+.icon-facebook {
+  color: #3b5998;
+}
+
+.icon-instagram {
+  color: #e4405f;
+}
+
+.icon-linkedin {
+  color: #0077b5;
+}
+
+.icon-youtube {
+  color: #ff0000;
+}
+
 .social-div {
   display: flex;
   align-items: center;
   gap: 48px;
+  color: #fff;
 }
 .condition {
   display: flex;
   align-items: flex-start;
   gap: 48px;
-  color: #111827;
+  color: white;
 }
 .conditions {
-  color: var(--gray-900, #111827);
+  color: white;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;

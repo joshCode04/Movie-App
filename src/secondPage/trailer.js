@@ -88,7 +88,7 @@ export default function Trailer() {
                 </>
               )}
 
-              <p>{movieDetails?.overview}</p>
+              <p style={{ color: "white" }}>{movieDetails?.overview}</p>
             </div>
             <div className="storyline">
               <img className="star" src={star} alt="star" />

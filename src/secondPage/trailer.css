@@ -60,7 +60,7 @@
   height: 152px;
 }
 .title {
-  color: #404040;
+  color: #f9f4f4;
   font-family: Poppins;
   font-size: 23px;
   font-style: normal;
@@ -119,6 +119,7 @@
 .storyline {
   width: 412px;
   height: 182px;
+  margin-bottom: 25px;
 }
 .something-button {
   width: 350px;
@@ -162,7 +163,7 @@
   height: 152px;
 }
 .actors {
-  color: #333;
+  color: #fff;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;

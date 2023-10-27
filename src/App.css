@@ -30,3 +30,34 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media only screen and (max-width: 857px) {
+  .main-container {
+    width: 100vw;
+    align-items: center;
+  }
+  .movie-card {
+    display: flex;
+    justify-content: space-between;
+    height: 430px;
+    top: 200px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 400px;
+  }
+}
+/* For screens up to 800px */
+@media only screen and (max-width: 800px) {
+  .movie-card {
+    display: flex;
+    justify-content: space-between;
+    height: 430px;
+    top: 200px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 355px;
+  }
+}
+
+/* For screens up to 780px */
+@media only screen and (max-width: 780px) {
+}

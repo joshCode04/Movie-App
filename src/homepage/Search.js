@@ -64,16 +64,19 @@ export default function SearchContainer() {
           <div className="icon-container">
             <ion-icon name="film-outline"></ion-icon>
           </div>
-          <h3
-            style={{
-              margin: 0,
-              marginLeft: "19px",
-              marginBottom: "0",
-              color: "white",
-            }}
-          >
-            FilmFusion
-          </h3>
+          <div style={{ width: "70px", marginLeft: "-40px" }}>
+            <h3
+              className="film-fusion"
+              style={{
+                margin: 0,
+                marginLeft: "19px",
+                marginBottom: "0",
+                color: "white",
+              }}
+            >
+              FilmFusion
+            </h3>
+          </div>
         </div>
 
         <Search
@@ -107,8 +110,13 @@ export default function SearchContainer() {
         )}
 
         <div className="right">
-          <h3 className="sign-in">Sign in</h3>
-          <div className="icon-container">
+          <div
+            className="right-text"
+            style={{ width: "100px", marginLeft: "10px" }}
+          >
+            <h3 className="sign-in">Sign in</h3>
+          </div>
+          <div className="icon-container1" style={{ marginLeft: "0px" }}>
             <ion-icon name="reorder-two-outline"></ion-icon>
           </div>
         </div>

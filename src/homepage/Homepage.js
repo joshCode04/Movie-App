@@ -93,38 +93,46 @@ const MovieCarousel = ({ movies, selectedMovieId, onSelectMovie }) => {
 
   return (
     <>
-      <img
-        className="homepage"
-        src={`https://image.tmdb.org/t/p/original${currentMovie.backdrop_path}`}
-        alt="pics"
-      />
-
-      <div className="title">
-        <div style={{ height: "150px", marginBottom: "50px" }}>
-          <h1
-            style={{ fontSize: "50px", marginBottom: "15px", color: "white" }}
+      <div>
+        <img
+          className="homepage"
+          src={`https://image.tmdb.org/t/p/original${currentMovie.backdrop_path}`}
+          alt="pics"
+        />
+        <div className="title">
+          <div
+            style={{
+              height: "150px",
+              marginBottom: "50px",
+              overflowY: "hidden",
+            }}
           >
-            {currentMovie.name} || {currentMovie.title}
-          </h1>
+            <h1
+              style={{ fontSize: "50px", marginBottom: "15px", color: "white" }}
+            >
+              {currentMovie.name} || {currentMovie.title}
+            </h1>
+          </div>
         </div>
-      </div>
-      <div className="ratings">
-        <div className="first">
-          <img className="imdb" src={imdb} alt="imdb" />
-          <p style={{ margin: 0 }}>86.0/100</p>
+        <div className="ratings">
+          <div className="first">
+            <img className="imdb" src={imdb} alt="imdb" />
+            <p style={{ margin: 0 }}>86.0/100</p>
+          </div>
+          <div className="second">
+            <img className="tomato" src={tomato} alt={tomato} />
+            <p style={{ margin: 0 }}>90%</p>
+          </div>
         </div>
-        <div className="second">
-          <img className="tomato" src={tomato} alt={tomato} />
-          <p style={{ margin: 0 }}>90%</p>
+        <div style={{ height: "300px" }}>
+          <p
+            className="details"
+            style={{ fontFamily: "calibri", fontWeight: "bold" }}
+          >
+            {currentMovie.overview}
+          </p>
         </div>
-      </div>
-      <p
-        className="details"
-        style={{ fontFamily: "calibri", fontWeight: "bold" }}
-      >
-        {currentMovie.overview}
-      </p>
-      {/* <button
+        {/* <button
         className="trailer-button"
         onClick={() => handleButtonClick(currentMovie.id)}
       >
@@ -146,11 +154,12 @@ const MovieCarousel = ({ movies, selectedMovieId, onSelectMovie }) => {
         </span>
         Wacth Trailer
       </button> */}
-      {selectedMovieId === currentMovie.id && (
-        <div style={{ display: "none" }}>
-          <SearchResults selectedMovieId={currentMovie.id} />
-        </div>
-      )}
+        {selectedMovieId === currentMovie.id && (
+          <div style={{ display: "none" }}>
+            <SearchResults selectedMovieId={currentMovie.id} />
+          </div>
+        )}
+      </div>
     </>
   );
 };

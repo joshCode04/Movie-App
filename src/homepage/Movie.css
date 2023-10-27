@@ -145,6 +145,30 @@
 
   .movie {
     width: "100%";
-    margin: 1rem;
+    /* margin: 1rem; */
   }
+}
+@media only screen and (max-width: 857px) {
+  .movie {
+    width: 140px;
+    height: 310px;
+    display: flex;
+  }
+  .card {
+    height: 199px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .movie {
+    width: 120px;
+    height: 290px;
+    display: flex;
+  }
+  .card {
+    height: 179px;
+  }
+}
+
+/* For screens up to 780px */
+@media only screen and (max-width: 780px) {
 }

@@ -40,7 +40,7 @@ export default function MovieCard({ movie }) {
             alt="img"
           />
         </div>
-        <div style={{ color: "white" }}>
+        <div style={{ color: "white", paddingBottom: "20px" }}>
           <span style={{ color: "#9ca3af" }}>
             {movie.origin_country ? movie.origin_country : "No Origin Country"}
           </span>
@@ -85,9 +85,6 @@ export default function MovieCard({ movie }) {
             </div>
             <p style={{ margin: 0, color: "white" }}>90%</p>
           </div>
-          <p style={{ color: "white", margin: 0, paddingTop: "20px" }}>
-            Adventure, Horor
-          </p>
         </div>
       </div>
     </>

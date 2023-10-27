@@ -34,6 +34,14 @@ ion-icon[name="reorder-two-outline"] {
   text-align: center;
   border-radius: 50%;
 }
+.icon-container1 {
+  background-color: #be123c;
+  padding: 10px 0;
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+  border-radius: 50%;
+}
 .search-input {
   border-radius: 6px;
   border: 2px solid var(--gray-300, #d1d5db);
@@ -153,4 +161,85 @@ ion-icon[name="search-outline"] {
 .sign-in:hover {
   color: #be123c;
   cursor: pointer;
+}
+@media only screen and (max-width: 857px) {
+  .search-container {
+    width: 390px;
+    margin-left: 0;
+    margin-left: -10px;
+    margin-right: 0;
+  }
+  .right {
+    display: inline-flex;
+    align-items: center;
+    /* float: right; */
+  }
+  .left {
+    display: inline-flex;
+    /* align-items: center; */
+  }
+  .film-fusion {
+    font-size: x-small;
+  }
+  .sign-in {
+    font-size: small;
+    text-decoration: underline;
+  }
+  .icon-container {
+    /* display: none; */
+  }
+  .search-input {
+    position: absolute;
+    top: 50px;
+    width: 50vw;
+    left: 90px;
+  }
+  .result-container {
+    position: absolute;
+    width: 400px;
+    height: 650px;
+    left: 7px;
+    overflow-x: hidden;
+    background-color: transparent;
+  }
+  .icon-container1 {
+    margin-left: -80px;
+  }
+  .right {
+    gap: 1px;
+  }
+  .right-text {
+    margin-right: -35px;
+  }
+}
+/* For screens up to 800px */
+@media only screen and (max-width: 800px) {
+  .search-container {
+    width: 370px;
+  }
+  .result-container {
+    width: 370px;
+  }
+}
+
+/* For screens up to 780px */
+@media only screen and (max-width: 780px) {
+  .result-container {
+    width: 360px;
+  }
+
+  .search-input {
+    left: 70px;
+  }
+  .icon-container1 {
+    margin-left: -60px;
+  }
+
+  .right {
+    gap: 5px;
+  }
+
+  .right-text {
+    margin-right: -20px;
+  }
 }

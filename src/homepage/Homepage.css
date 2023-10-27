@@ -2,7 +2,7 @@
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  /* gap: 16px; */
   margin-top: 40px;
   margin-left: 70px;
 }
@@ -174,4 +174,11 @@
   bottom: 45px;
   left: 1px;
   z-index: -1;
+}
+@media only screen and (max-width: 857px) {
+  .homepage {
+    height: 520px;
+    top: 50px;
+    opacity: 0.5;
+  }
 }

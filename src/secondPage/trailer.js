@@ -50,6 +50,17 @@ export default function Trailer() {
   const trailer = movieDetails?.videos?.results.find(
     (vid) => vid.name === "Official Trailer"
   );
+  const [isMobile, setIsMobile] = useState(
+    window.matchMedia("(max-width: 393px)").matches
+  );
+
+  const handleMediaQuery = (e) => {
+    setIsMobile(e.matches);
+  };
+
+  window
+    .matchMedia("(max-width: 393px)")
+    .addEventListener("change", handleMediaQuery);
   return (
     <div className="all">
       <div className="trailer-view">
@@ -58,9 +69,10 @@ export default function Trailer() {
             title="trailer"
             videoId={trailer?.key}
             containerClassname="trailer-video"
+            className="trailer-video"
             opts={{
-              width: "100%",
-              height: "389px",
+              width: isMobile ? "345px" : "100%",
+              height: isMobile ? "200px" : "389px",
             }}
           />
         ) : (
@@ -69,7 +81,7 @@ export default function Trailer() {
 
         <div className="watch"></div>
         <div className="movie-info">
-          <div style={{ display: "flex" }}>
+          <div className="boxm" style={{ display: "flex" }}>
             <div className="content-header">
               <h3 className="title">
                 {movieDetails?.original_title || "Unknown title"} •{" "}

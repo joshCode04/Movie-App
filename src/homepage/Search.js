@@ -92,6 +92,7 @@ export default function SearchContainer() {
               <ion-icon name="search-outline"></ion-icon>
             </button>
             <button
+              className="cancel"
               style={{
                 borderRadius: "50%",
                 width: "40px",

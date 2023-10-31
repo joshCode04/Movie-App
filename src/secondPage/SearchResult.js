@@ -12,6 +12,9 @@ function SearchResults({ selectedMovieId }) {
   };
   return (
     <div className="movie1">
+      <button onClick={handleButtonClick} className="pada" style={{}}>
+        Go back
+      </button>
       <div className="dashboard">
         <div
           className="go-back"

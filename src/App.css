@@ -61,3 +61,11 @@
 /* For screens up to 780px */
 @media only screen and (max-width: 780px) {
 }
+@media only screen and (max-width: 412px) {
+  .homepage-title {
+    width: 400px;
+  }
+  .main-container {
+    width: 400px;
+  }
+}

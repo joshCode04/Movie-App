@@ -47,20 +47,42 @@ export default function Trailer() {
     fetchMovieDetails();
   }, [movieId]); // Add movieId as a dependency
 
-  const trailer = movieDetails?.videos?.results.find(
-    (vid) => vid.name === "Official Trailer"
-  );
   const [isMobile, setIsMobile] = useState(
     window.matchMedia("(max-width: 393px)").matches
+  );
+  const [isTablet, setIsTablet] = useState(
+    window.matchMedia("(min-width: 394px) and (max-width: 412px)").matches
   );
 
   const handleMediaQuery = (e) => {
     setIsMobile(e.matches);
   };
 
-  window
-    .matchMedia("(max-width: 393px)")
-    .addEventListener("change", handleMediaQuery);
+  const handleTabletMediaQuery = (e) => {
+    setIsTablet(e.matches);
+  };
+
+  useEffect(() => {
+    window
+      .matchMedia("(max-width: 393px)")
+      .addEventListener("change", handleMediaQuery);
+    window
+      .matchMedia("(min-width: 394px) and (max-width: 412px)")
+      .addEventListener("change", handleTabletMediaQuery);
+
+    return () => {
+      window
+        .matchMedia("(max-width: 393px)")
+        .removeEventListener("change", handleMediaQuery);
+      window
+        .matchMedia(" (max-width: 412px)")
+        .removeEventListener("change", handleTabletMediaQuery);
+    };
+  }, [movieId]);
+
+  const trailer = movieDetails?.videos?.results.find(
+    (vid) => vid.name === "Official Trailer"
+  );
   return (
     <div className="all">
       <div className="trailer-view">
@@ -71,8 +93,8 @@ export default function Trailer() {
             containerClassname="trailer-video"
             className="trailer-video"
             opts={{
-              width: isMobile ? "345px" : "100%",
-              height: isMobile ? "200px" : "389px",
+              width: isMobile ? "345px" : isTablet ? "375px" : "100%",
+              height: isMobile ? "200px" : isTablet ? "200px" : "389px",
             }}
           />
         ) : (

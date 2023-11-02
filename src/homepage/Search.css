@@ -236,6 +236,77 @@ ion-icon[name="search-outline"] {
     max-width: 50px;
   }
 }
+@media only screen and (max-width: 412px) {
+  .search-container {
+    width: 390px;
+    margin-left: 0;
+    margin-left: -10px;
+    margin-right: 0;
+  }
+
+  .list-movies {
+    left: 30px;
+    /* width: 350px; */
+    gap: 10px;
+  }
+  .list-movies li {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    color: black;
+    width: 100px;
+    height: 300px;
+  }
+  .right {
+    display: inline-flex;
+    align-items: center;
+    /* float: right; */
+  }
+  .left {
+    display: inline-flex;
+    /* align-items: center; */
+  }
+  .film-fusion {
+    font-size: x-small;
+  }
+  .sign-in {
+    font-size: small;
+    text-decoration: underline;
+    margin-right: 0;
+    width: 50px;
+  }
+  .icon-container {
+    /* display: none; */
+  }
+  .search-input {
+    /* position: relative; */
+    top: 50px;
+    width: 50vw;
+    left: 90px;
+  }
+  .result-container {
+    position: absolute;
+    width: 700px;
+    height: 650px;
+    left: 1px;
+    overflow-x: hidden;
+    background-color: transparent;
+  }
+  .icon-container1 {
+    margin-left: -80px;
+    display: none;
+  }
+  .right {
+    gap: 1px;
+  }
+  .right-text {
+    margin-right: -35px;
+    max-width: 50px;
+  }
+}
 /* For screens up to 800px */
 @media only screen and (max-width: 800px) {
   .search-container {

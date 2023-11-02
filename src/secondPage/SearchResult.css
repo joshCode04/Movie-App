@@ -160,3 +160,31 @@
     display: none;
   }
 }
+@media only screen and (max-width: 412px) {
+  .dashboard {
+    position: absolute;
+    background-color: transparent;
+    display: none;
+  }
+  .left,
+  .nav {
+    display: none;
+  }
+  .movie1 {
+    width: 390px;
+    z-index: -1;
+  }
+  .go-back {
+    z-index: 2;
+  }
+  .icon {
+    position: relative;
+  }
+  .pada {
+    width: 50px;
+    height: 50px;
+    margin-right: -50px;
+    margin-left: 5px;
+    z-index: 1;
+  }
+}

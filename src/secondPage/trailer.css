@@ -328,7 +328,7 @@
     width: 320px;
   }
 }
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 412px) and (min-width: 394px) {
   .all {
     width: 390px;
     z-index: -1;
@@ -354,7 +354,84 @@
     /* height: 200px; */
     margin-left: -15px;
     width: 400px;
-    z-index: 2;
+    /* z-index: 2; */
+  }
+  .content-header {
+    width: 330px;
+  }
+  .boxm {
+    width: 330px;
+    margin-left: -20px;
+    margin-bottom: 140px;
+  }
+  .storyline {
+    display: none;
+  }
+  .movie-info {
+    width: 300px;
+    left: -25px;
+    padding-left: 50px;
+  }
+  .writer {
+    width: 320px;
+  }
+  .last-btn {
+    width: 320px;
+  }
+  .award {
+    display: none;
+  }
+  .dropdown {
+    display: none;
+  }
+  .last-div {
+    width: 320px;
+    margin-left: -22px;
+  }
+  .last {
+    position: relative;
+    left: -25px;
+    top: 150px;
+    width: 320px;
+  }
+  .watch {
+    left: 1px;
+  }
+  .actors {
+    margin-left: -10px;
+    width: 320px;
+  }
+  .last-image {
+    width: 320px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .all {
+    width: 390px;
+    z-index: -1;
+    height: 100vh;
+  }
+
+  .trailer-view {
+    width: 320px;
+    height: 200px;
+    border-radius: 20px;
+    background: lightgray 50% / cover no-repeat;
+    display: block;
+    /* margin-left: 30px; */
+    margin-top: 70px;
+    float: inline-start;
+  }
+  .trailer-image {
+    /* height: 300px; */
+    width: 350px;
+    height: 200px;
+  }
+  .trailer-video {
+    /* height: 200px; */
+    margin-left: -15px;
+    width: 400px;
+    /* z-index: 2; */
   }
   .content-header {
     width: 330px;

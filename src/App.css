@@ -69,3 +69,29 @@
     width: 400px;
   }
 }
+@media only screen and (max-width: 393px) {
+  .homepage-title {
+    width: 350px;
+  }
+  .main-container {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .homepage-title {
+    width: 340px;
+  }
+  .main-container {
+    width: 320px;
+  }
+  .movie-card {
+    display: flex;
+    justify-content: space-between;
+    height: 430px;
+    top: 200px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 345px;
+    /* margin-left: 5px; */
+  }
+}

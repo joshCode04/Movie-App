@@ -170,7 +170,7 @@ ion-icon[name="search-outline"] {
   .search-container {
     width: 390px;
     margin-left: 0;
-    margin-left: -10px;
+    /* margin-left: -10px; */
     margin-right: 0;
   }
   .list-movies {
@@ -196,7 +196,8 @@ ion-icon[name="search-outline"] {
   }
   .left {
     display: inline-flex;
-    /* align-items: center; */
+    align-items: center;
+    gap: 24px;
   }
   .film-fusion {
     font-size: x-small;
@@ -208,7 +209,12 @@ ion-icon[name="search-outline"] {
     width: 50px;
   }
   .icon-container {
-    /* display: none; */
+    background-color: #be123c;
+    padding: 10px 0;
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
   }
   .search-input {
     /* position: relative; */
@@ -238,8 +244,7 @@ ion-icon[name="search-outline"] {
 }
 @media only screen and (max-width: 412px) {
   .search-container {
-    width: 390px;
-    margin-left: 0;
+    width: 350px;
     margin-left: -10px;
     margin-right: 0;
   }
@@ -261,16 +266,18 @@ ion-icon[name="search-outline"] {
     height: 300px;
   }
   .right {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     /* float: right; */
   }
   .left {
     display: inline-flex;
-    /* align-items: center; */
+    align-items: center;
+    gap: 24px;
   }
   .film-fusion {
     font-size: x-small;
+    width: 50px;
   }
   .sign-in {
     font-size: small;
@@ -337,4 +344,12 @@ ion-icon[name="search-outline"] {
   .right-text {
     margin-right: -20px;
   }
+}
+@media only screen and (max-width: 360px) {
+  .search-container {
+    width: 320px;
+    margin-left: -20px;
+    margin-right: 0;
+  }
+  
 }

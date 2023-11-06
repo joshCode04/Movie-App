@@ -82,7 +82,8 @@
     width: 340px;
   }
   .main-container {
-    width: 360px;
+    width: 355px;
+    margin-left: -3px;
   }
   .movie-card {
     display: flex;

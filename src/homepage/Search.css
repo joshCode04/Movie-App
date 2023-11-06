@@ -351,4 +351,13 @@ ion-icon[name="search-outline"] {
     margin-left: -20px;
     margin-right: 0;
   }
+  .result-container {
+    width: 355px;
+  }
+  .right-text {
+    margin-left: 0;
+  }
+  .card-image {
+    width: 100px;
+  }
 }

@@ -196,6 +196,7 @@ export function Movie({
   return (
     <li className="cards" onClick={() => handleMovieClick(id)}>
       <img
+        className="card-image"
         src={
           posterPath ? `https://image.tmdb.org/t/p/w500${posterPath}` : images
         }

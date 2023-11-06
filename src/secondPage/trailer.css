@@ -482,3 +482,255 @@
     width: 320px;
   }
 }
+@media only screen and (max-width: 884px) and (min-width: 700px) {
+  .all {
+    width: 800px;
+    z-index: -1;
+    height: 100vh;
+  }
+
+  .trailer-view {
+    width: 320px;
+    height: 200px;
+    border-radius: 20px;
+    background: lightgray 50% / cover no-repeat;
+    display: block;
+    /* margin-left: 30px; */
+    margin-top: 70px;
+    float: inline-start;
+  }
+  .trailer-image {
+    /* height: 300px; */
+    width: 350px;
+    height: 200px;
+  }
+  .trailer-video {
+    /* height: 200px; */
+    margin-left: 15px;
+    width: 800px;
+    /* z-index: 2; */
+  }
+  .content-header {
+    width: 800px;
+  }
+  .boxm {
+    width: 330px;
+    margin-left: -20px;
+    margin-bottom: 140px;
+  }
+  .storyline {
+    display: none;
+  }
+  .movie-info {
+    width: 800px;
+    text-align: center;
+    left: -25px;
+    padding-left: 50px;
+  }
+  .content-header {
+    gap: 20px;
+    width: 800px;
+    height: 152px;
+  }
+  .title {
+    color: #f9f4f4;
+    font-family: Poppins;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: inline;
+  }
+  .action {
+    color: #b91c1c;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 84px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid #f8e7eb;
+    margin-left: 20px;
+  }
+  .drama {
+    color: #b91c1c;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 84px;
+    height: 30px;
+    flex-shrink: 0;
+    margin-left: 20px;
+
+    border-radius: 15px;
+    border: 1px solid #f8e7eb;
+  }
+  .star {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    position: relative;
+    left: 230px;
+  }
+
+  .review {
+    color: #e8e8e8;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 100px;
+    margin: 0;
+    float: right;
+  }
+  .storyline {
+    width: 412px;
+    height: 182px;
+    margin-bottom: 25px;
+  }
+  .something-button {
+    width: 350px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #be123c;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .more-button {
+    width: 350px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #be123c;
+    background: rgba(190, 18, 60, 0.1);
+    color: #333;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .review {
+    margin-bottom: 20px;
+  }
+  .btns-icon {
+    width: 23px;
+    height: 23px;
+    flex-shrink: 0;
+
+    padding-right: 20px;
+  }
+  .writer {
+    width: 632px;
+    height: 152px;
+  }
+  .actors {
+    margin-left: -20px;
+    color: #fff;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .red-content {
+    color: #be123c;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .last-div {
+    width: 332px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #c7c7c7;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    gap: 30px;
+  }
+  .last-btn {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 253px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #be123c;
+  }
+  .award {
+    color: #333;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: none;
+  }
+  .dropdown {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    background: lightgray 50% / contain no-repeat;
+    margin-left: 70px;
+    position: relative;
+    top: 10px;
+    display: none;
+  }
+  .last {
+    width: 160px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: lightgray 50% / cover no-repeat;
+    position: relative;
+    left: 650px;
+    bottom: 150px;
+    /* display: none; */
+  }
+  .last-image {
+    width: 360px;
+    height: 229px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    position: relative;
+    left: -200px;
+    bottom: 250px;
+  }
+  .best-movies-content {
+    color: #e8e8e8;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 360px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: rgba(18, 18, 18, 0.5);
+    backdrop-filter: blur(2px);
+    position: relative;
+    bottom: 60px;
+    display: none;
+  }
+  .trailer-video {
+    /* border-radius: 10px; */
+    overflow: hidden;
+  }
+}

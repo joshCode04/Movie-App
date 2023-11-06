@@ -97,3 +97,10 @@
     left: 15px;
   }
 }
+@media only screen and (max-width: 884px) and (min-width: 700px) {
+  .footer-div {
+    /* width: 330px; */
+    left: 200px;
+    top: 1650px;
+  }
+}

@@ -323,6 +323,27 @@ ion-icon[name="search-outline"] {
     width: 370px;
   }
 }
+@media only screen and (max-width: 884px) and (min-width: 700px) {
+  .result-container {
+    width: 770px;
+    left: 20px;
+  }
+  /* .cancel {
+    right: 200px;
+  } */
+  .search-input {
+    width: 40vw;
+  }
+  .search-container {
+    width: 850px;
+    margin-left: -12px;
+  }
+}
+@media only screen and (max-width: 884px) {
+  .search-container {
+    justify-content: space-between;
+  }
+}
 
 /* For screens up to 780px */
 @media only screen and (max-width: 780px) {
